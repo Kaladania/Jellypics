@@ -1,0 +1,1196 @@
+:root {
+  --button-color: #E50914;
+  --button-color-hover: #CF1A2B;
+  --accent-color:  #c2185b;
+  --rgb-accent-colour: 169,21,100;
+  --shadow-accent-color:  #910144;
+  --rgb-shadow-accent-colour: 145,0,67;
+  }
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -*/
+/*Accent color*/
+
+/*My media (small) colour*/
+/*.countIndicator,
+.itemProgressBarForeground,
+.navMenuOption-selected,
+.raised
+{background: var(--accent-color) !important;}*/
+
+.emby-checkbox:checked + span + .checkboxOutline
+{background-color: var(--accent-color) !important;}
+
+
+.paper-icon-button-light:hover,
+.button-flat:hover,
+.playstatebutton-icon-played,
+.ratingbutton-icon-withrating,
+.paper-icon-button-light:hover:not(:disabled),
+.emby-tab-button:hover
+{color: var(--accent-color) !important;}
+
+/*Mouse hover color*/
+
+.actionSheetMenuItem:hover
+{background-color: rgba(var(--rgb-accent-colour), 0.4) !important;}
+
+/*Mouse hover color*/
+.paper-icon-button-light:hover,
+.paper-icon-button-light:hover,
+.navMenuOption:hover
+{background-color: rgba(var(--rgb-accent-colour), 0) !important;}
+
+
+/*Border Colour Change - CURRENTLY COMMENTED OUT*/
+/*.emby-textarea:focus,
+.emby-checkbox:checked + span + .checkboxOutline,
+.emby-select-withcolor:focus,
+.emby-input:focus
+{border: 0.01em solid rgba(150,150,150) !important;}*/
+
+
+/* Extracts from the Jellfin Theme */
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -*/
+
+/*Item Detail Page*/
+.detailLogo {
+  width: 35vw;
+  height: 16vh;
+}
+
+
+/*Item Detail Page - Logo Title Settings*/
+#itemDetailPage .detailLogo {
+  position: static;
+  margin-left: 32.5%;
+  display: block;
+  -webkit-filter: drop-shadow(0 0 10px rgba(2, 2, 2, 0.75));
+  filter: drop-shadow(0 0 10px rgba(2, 2, 2, 0.75));
+  flex-shrink: 0;
+  background-position: 0 50%;
+  margin-top: 8vh;
+}
+
+.layout-mobile .detailLogo {
+  display: none !important;
+
+}
+
+
+/*Item Detail Page - Title Name*/
+#itemDetailPage .itemName.infoText.parentNameLast {
+  display: none;
+}
+.hide + .detailPageWrapperContainer .itemName {
+  display: block !important;
+}
+
+.layout-desktop .hide + .detailPageWrapperContainer .detailRibbon {
+  margin-top: 8vh;
+}
+
+.itemName {
+  margin: 0.5em 0 !important;
+}
+
+/*Mobile - Item Detail Page - Title Name*/
+.layout-mobile #itemDetailPage .itemName.infoText.parentNameLast {
+  display: block;
+}
+
+#itemDetailPage .button-flat:hover {
+  transform: scale(1.5);
+}
+
+.button-flat {
+  border-radius: 5px !important;
+}
+
+
+.defaultCardBackground {
+  background: transparent;
+}
+
+
+
+/* Inline #46 | http://100.117.92.45:8096/web/index.html#!/details?id=4f9014ea8a025721ff1b9f017671c974&serverId=9719b14839144ae188d4f1923c1043a9 */
+
+div[data-role="page"] > * {
+  /* padding-top: 16px; */
+}
+
+#itemDetailPage .detailLogo {
+  /* margin-left: 32.5%; */
+  margin-left: 32.5vw;
+}
+
+
+/* Inline #47 | http://100.117.92.45:8096/web/index.html#!/details?id=54d5ea3be75f272d7f61694293905b0a&serverId=9719b14839144ae188d4f1923c1043a9 */
+
+div[data-role="page"] > * {
+  /* padding-top: 16px; */
+}
+
+#itemDetailPage .detailLogo {
+  /* margin-left: 32.5%; */
+  margin-left: 32.5vw;
+}
+
+.detailLogo {
+  /* width: 35vw; */
+  /* height: 16vh; */
+  width: 41vw;
+  height: 18vh;
+}
+
+/* Inline #48 | http://100.117.92.45:8096/web/index.html#!/details?id=0a0724b54284447a5c95ad9ad25bc8a9&serverId=9719b14839144ae188d4f1923c1043a9 */
+
+div.page:nth-child(1) > div:nth-child(3) > div:nth-child(2) > div:nth-child(2) > div:nth-child(4) > h2:nth-child(1) {
+  padding-top: 20px;
+}
+
+/*Library (Folders) - Remove Shuffle and play all buttons*/
+
+.layout-desktop .button-flat.btnPlay {
+  display: none !important;
+}
+
+.button-flat.btnShuffle {
+  display: inline !important;
+}
+
+.button-flat.btnPlayTrailer {
+  display: none !important;
+}
+
+.mediaInfoItem:not(:last-child)::after {
+  content: "";
+  width: 1px;
+  height: 100%;
+  background: #7c7c7cee;
+  position: absolute;
+  right: -9px;
+  border-radius: 10px;
+}
+
+
+/* Inline #29 | http://100.117.92.45:8096/web/index.html#!/details?id=54d5ea3be75f272d7f61694293905b0a&serverId=9719b14839144ae188d4f1923c1043a9 */
+
+div:not(.sectionTitleContainer-cards) > .sectionTitle-cards {
+  /* padding-bottom: .2em; */
+  padding-bottom: .5em;
+}
+
+.layout-desktop .detailRibbon {
+  /* height: 7.2em; */
+}
+
+/* Element | http://100.117.92.45:8096/web/index.html#!/details?id=0a0724b54284447a5c95ad9ad25bc8a9&serverId=9719b14839144ae188d4f1923c1043a9 */
+
+div.page:nth-child(3) > div:nth-child(3) > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) {
+  /* margin-bottom: .6em; */
+}
+
+/* Inline #38 | http://100.117.92.45:8096/web/index.html#!/details?id=0a0724b54284447a5c95ad9ad25bc8a9&serverId=9719b14839144ae188d4f1923c1043a9 */
+
+.mediaInfoItem {
+  /* margin: 0 1em 0 0; */
+  margin: 0 1.3em 0 0.1em;
+  font-weight: 100;
+  position: relative;
+}
+
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -*/
+
+/*Header*/
+
+.skinHeader-withBackground {
+  text-shadow: 0 0 5px black;
+  background-color: transparent !important;
+}
+
+.emby-button-foreground::after {
+  content: "";
+  height: 2px;
+  width: 0%;
+  background: rgb(0, 164, 220);
+  position: absolute;
+  bottom: -35%;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: width 0.15s ease-in-out;
+}
+
+.emby-tab-button:hover .emby-button-foreground::after {
+  width: 75%;
+}
+
+body.force-scroll {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: stretch;
+  justify-content: flex-start;
+  overflow: hidden;
+}
+
+.skinHeader {
+  position: static;
+  width: 100%;
+  align-self: flex-start;
+}
+
+.mainAnimatedPages {
+  height: 100vh;
+  position: relative !important;
+  overflow: hidden;
+}
+
+.subtitleSync {
+   top: 17vh;
+}
+
+
+.libraryPage:not(.noSecondaryNavPage) {
+  padding: 0 !important;
+}
+
+div#itemDetailPage {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+
+@media (min-width: 40em) {
+  .dashboardDocument .skinBody {
+    left: 20em;
+    width: calc(100vw - 20em);
+  }
+}
+
+div[data-role="page"] {
+  margin: 0 !important;
+  padding: 0 !important;
+  position: static;
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+  -webkit-mask: linear-gradient(
+    to bottom,
+    transparent,
+    black 15px calc(100% - 15px),
+    transparent
+  );
+  mask: linear-gradient(
+    to bottom,
+    transparent,
+    black 15px calc(100% - 15px),
+    transparent
+  );
+}
+
+div[data-role="page"] > * {
+  padding-top: 16px;
+}
+
+.layout-tv .mainAnimatedPages {
+  overflow: visible;
+  mask: none;
+  -webkit-mask: none;
+}
+
+div#videoOsdPage {
+  overflow: hidden !important;
+  margin-top: 0 !important;
+  -webkit-mask: none !important;
+  mask: none !important;
+}
+
+div[data-role="page"]:not(.withTabs) {
+  margin-top: 0 !important;
+}
+
+div#itemBackdrop {
+  display: none;
+}
+
+.layout-desktop .detailRibbon {
+  margin-top: 0 !important;
+}
+
+.layout-mobile #itemDetailPage {
+  position: fixed;
+  -webkit-mask: none;
+  mask: none;
+  margin-top: 4em !important;
+  height: calc(100vh - 4em);
+}
+
+/*
+.layout-mobile .detailPageWrapperContainer {
+  height: 100%;
+  overflow: scroll;
+  position: relative;
+  background: #ddd;
+  color: #383838;
+  opacity: 0.5;
+  width: 90%;
+  border-radius: 10px;
+  font-size: 110%;
+  margin: 20px auto;
+  text-shadow: none !important;
+}
+
+.layout-mobile .detailPageWrapperContainer::after {
+  content: "";
+  position: fixed;
+  width: 90%;
+  background: linear-gradient(
+    0deg,
+    #ddd,
+    transparent 15px calc(100% - 15px),
+    #ddd
+  );
+  left: 50%;
+  transform: translatex(-50%);
+  z-index: 200;
+  height: calc(100% - 4em - 34px);
+  bottom: 20px;
+  border-radius: var(--rounding);
+  -webkit-transform: translatex(-50%);
+  -moz-transform: translatex(-50%);
+  -ms-transform: translatex(-50%);
+  -o-transform: translatex(-50%);
+  pointer-events: none;
+}
+
+.layout-mobile
+  .detailPagePrimaryContainer.padded-left.padded-right.detailRibbon {
+  text-shadow: none !important;
+}
+
+.layout-mobile .detailPageContent {
+  text-shadow: none !important;
+}
+
+.layout-mobile
+  #itemDetailPage
+  .childrenSectionHeader.sectionTitle.sectionTitle-cards {
+  text-shadow: none !important;
+}
+
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -*/
+
+/*Subtitle preview*/
+
+.subtitleappearance-preview {
+  background: var(--accent) !important;
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+/*Resize Episodes in a more compact way*/
+
+/* Inline #18 | http://100.117.92.45:8096/web/index.html#!/details?id=2c45f0118aa1d0999a884d5a0c38301e&serverId=9719b14839144ae188d4f1923c1043a9 */
+
+.itemsContainer, .vertical-list {
+  /* display: flex; */
+  display: flex;
+  grid-template-columns: auto auto auto;
+}
+
+div.vertical-list:nth-child(1) {
+  display: grid;
+}
+
+/* Inline #15 | http://100.117.92.45:8096/web/index.html#!/details?id=2c45f0118aa1d0999a884d5a0c38301e&serverId=9719b14839144ae188d4f1923c1043a9 */
+
+.listItem, .listItemBody, .listItemMediaInfo {
+  /* display: flex; */
+  display: grid;
+}
+
+.listItem-content {
+  /* display: flex; */
+  display: grid;
+  grid-template-rows: auto auto auto;
+}
+
+/* Inline #45 | http://100.117.92.45:8096/web/index.html#!/details?id=2c45f0118aa1d0999a884d5a0c38301e&serverId=9719b14839144ae188d4f1923c1043a9 */
+
+#itemDetailPage .listItem-content {
+  background: rgba(0, 0, 0, 0);
+  border-radius: 18px;
+  -moz-transition: background 0.15s ease-in-out;
+  overflow: visible !important;
+  -o-transition: background 0.15s ease-in-out;
+  transition: background 0.15s ease-in-out;
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+  -webkit-transition: background 0.15s ease-in-out;
+  -moz-transition: background 0.15s ease-in-out;
+  -ms-transition: background 0.15s ease-in-out;
+  -o-transition: background 0.15s ease-in-out;
+}
+
+.listItemImage.listItemImage-large {
+  /* \.listItemImage\.listItemImage-large\ \{\ width: 100%; */
+  /* margin: 0; */
+  /* margin: 0; */
+  width: 100%;
+  margin: 0;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  \.listItemImage\.listItemImage-large\ \{\ width: ;
+}
+
+.secondary.listItemMediaInfo.listItemBodyText {
+  display: none;
+}
+
+
+.listItemButton[data-action="link"], .listItemButton[title="Favourite"] {
+  display: none;
+}
+
+/* Inline #30 | http://100.117.92.45:8096/web/index.html#!/details?id=2c45f0118aa1d0999a884d5a0c38301e&serverId=9719b14839144ae188d4f1923c1043a9 */
+
+.listViewUserDataButtons {
+  align-items: ;
+  flex-direction: column;
+  font-size: 90%;
+}
+
+.listItem.listItem-button.actionSheetMenuItem.emby-button {
+  display: flex;
+}
+
+div#myPreferencesMenuPage .listItem, div#myPreferencesMenuPage .listItemBody {
+display: flex;
+}
+
+
+/*Version for Mobile*/
+
+.layout-mobile .listItem, .layout-mobile .listItemBody, .layout-mobile  .listItemMediaInfo, .layout-mobile .listItem-content, .layout-mobile .listItem-overview {
+   display: flex;
+}
+
+/* Gap between episodes */
+.layout-mobile .listItem-withContentWrapper {
+   margin-bottom: 1.5em;
+}
+
+
+.layout-mobile .childrenItemsContainer.itemsContainer.padded-right.vertical-list, .layout-mobile .itemsContainer, .layout-mobile .vertical-list {
+  grid-template-columns: 1fr;
+}
+
+/* Image Play Button on Mobile - Currently Invisible*/
+.layout-mobile #itemDetailPage .listItemImageButton {
+  font-size: 0 !important;
+  width: 100%;
+  height: 100%;
+  background: rgba(16, 16, 16, 0.65);
+  z-index: -1;
+}
+
+.layout-mobile .listItemIndicators {
+  right: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--accent);
+  opacity: 0.45;
+}
+.layout-mobile .listItemIndicators > * {
+  display: none;
+}
+
+.layout-mobile .playedIndicator {
+  width: 100%;
+  height: 100%;
+  font-size: 1.2rem;
+}
+
+.layout-mobile .listItemIndicators .indicatorIcon.check {
+  position: absolute;
+  top: 5%;
+  right: 32%;
+}
+
+
+/*Mobile - Episode Description Text*/
+
+.layout-mobile .listItemBodyText {
+  max-width: 100% !important;
+}
+
+
+/*Mobile - Episode Description Colour*/
+
+.layout-mobile .listItemBodyText.secondary,
+.listItem .secondary {
+  color: #b9b9b9 !important;
+}
+
+.layout-mobile .listItem .playedIndicator {
+  background: transparent !important;
+}
+
+.layout-mobile .listItemImage {
+  height: 100% !important;
+  width: 100% !important;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+  border-radius: 10px !important;
+  z-index: -1;
+}
+
+.layout-mobile .listViewUserDataButtons {
+  position: static;
+}
+
+.layout-mobile .listItemButton {
+  padding: 0 0.556em !important;
+}
+
+.layout-mobile #itemDetailPage .listItem-content {
+  -webkit-backdrop-filter: none;
+  backdrop-filter: none;
+  align-items: center;
+  flex-flow: row;
+  background: none !important;
+  position: unset;
+  color: white;
+}
+
+
+
+
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+/* Other Stuff I found */
+
+#homeTab > div > div.section2 > div:nth-child(1) > div.sectionTitleContainer.sectionTitleContainer-cards.padded-left > a > h2 {display: none;}
+#homeTab > div > div.section2 > div:nth-child(1) > div.sectionTitleContainer.sectionTitleContainer-cards.padded-left > a > span {display: none;}
+#homeTab > div > div.section2 > div:nth-child(1) > div.sectionTitleContainer.sectionTitleContainer-cards.padded-left > a:after {
+content: 'Recently Added Movies ›';
+font-size: 24px;
+font-weight: normal;
+}
+
+#homeTab > div > div.section2 > div:nth-child(2) > div.sectionTitleContainer.sectionTitleContainer-cards.padded-left > a > h2 {display: none;}
+#homeTab > div > div.section2 > div:nth-child(2) > div.sectionTitleContainer.sectionTitleContainer-cards.padded-left > a > span {display: none;}
+#homeTab > div > div.section2 > div:nth-child(2) > div.sectionTitleContainer.sectionTitleContainer-cards.padded-left > a:after {
+content: 'Recently Added TV Shows ›';
+font-size: 24px;
+font-weight: normal;
+}
+
+#homeTab > div > div.section2 > div:nth-child(3) > div.sectionTitleContainer.sectionTitleContainer-cards.padded-left > a > h2 {display: none;}
+#homeTab > div > div.section2 > div:nth-child(3) > div.sectionTitleContainer.sectionTitleContainer-cards.padded-left > a > span {display: none;}
+#homeTab > div > div.section2 > div:nth-child(3) > div.sectionTitleContainer.sectionTitleContainer-cards.padded-left > a:after {
+content: 'Recently Added Anime ›';
+font-size: 24px;
+font-weight: normal;
+}
+
+/*Continue Watching thumbnail size*/
+div.card.overflowBackdropCard.card-hoverable.card-withuserdata {
+  width: 17vw;
+}
+
+/*Recentently added thumbnail size*/
+div.card.overflowPortraitCard.card-hoverable.card-withuserdata {
+  width: 14vw;
+}
+
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+/*Rounded corners on pretty much everything*/
+
+
+
+/*.cardContent-button, .cardContent-shadow, .itemDetailImage, .cardOverlayButton-hover, .cardOverlayContainer, .cardImageContainer, .cardPadder, .cardFooter, .listItemImage, .listItemImageButton, .listItemButton, .headerButton, .paper-icon-button-light, .innerCardFooter, .blurhash-canvas, .actionSheetMenuItem:hover, .dialog, .listItem-border */
+
+.cardContent-button, .cardContent-shadow, .itemDetailImage, .cardOverlayButton-hover, .cardOverlayContainer, .cardImageContainer, .cardPadder, .cardFooter, .listItemImage, .listItemImageButton, .listItemButton, .headerButton, .paper-icon-button-light, .innerCardFooter, .blurhash-canvas, .actionSheetMenuItem:hover, .dialog, .countIndicator, .playedIndicator, .listItem-border {
+   border-radius: 15px !important;
+}
+.osdPoster img {border-radius: 15px; border: none;}
+
+
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+/*Movie Details Screen/More Info - Settings*/
+
+
+/* Replace title with Logo*/
+
+@import url("https://cdn.jsdelivr.net/gh/prayag17/JellySkin@latest/addons/Logo.css");
+
+.detailPagePrimaryContainer {background: rgba(0, 0, 0, 0) !important; margin-top: 0 !important;}
+.itemBackdrop::after {background-color: rgba(0, 0, 0, 0) !important; background: none;}
+.itemBackdrop {height: 0; background-image: none !important;}
+.detailPageWrapperContainer {margin-top: 0;}
+.detailButtonHideonMobile {display: inline !important;}
+.detailFloatingButton {display: none !important;}
+.detailLogo {display: none;}
+
+
+/* Re-Arrange Media Information on Title Page*/
+
+.selectContainer {margin-right: 1em !important;}
+.checkboxOutline {border-radius: 6px; background-color: rgba(0, 0, 0, 0.5);}
+.emby-input, .emby-textarea, .emby-select-withcolor 
+{background: rgba(0, 0, 0, 0.5); 
+border: 0.01em solid rgba(255, 255, 255, 0.22); 
+border-radius: 6px;}
+
+.emby-input:focus, .emby-textarea;focus, .emby-select-withcolor:focus 
+{background: rgba(0, 0, 0, 0.5); border: 0.01em solid #00a4dcc2 !important;}
+.trackSelections {max-width: 22em;}
+
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+/*Shrink and square (or round) cast thumnails*/
+
+#castContent .card.overflowPortraitCard {width: 3.4cm !important; font-size: 90% !important;}
+.cardPadder {background-color: #0000 !important; box-shadow: none !important;}
+
+
+/*Correct image aspect ratio behaviour, set border-radius to zero for square tiles*/
+
+#castContent .cardOverlayContainer.itemAction,
+#castContent .cardImageContainer
+{border-radius: 6px !important;}
+#castContent .cardScalable {width:  3cm !important; height: 3cm !important;}
+
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+/*More Options Menu Settings*/
+
+.dialog {background-color: rgba(0, 0, 0, 0.9);}
+.actionSheetMenuItem:hover {background-color: rgba(var(--rgb-accent-colour), 0.4);}
+.mainDrawer {background-color: rgba(0, 0, 0, 0.9);}
+.navMenuOption:hover {background-color: rgba(var(--rgb-accent-colour), 0.4);}
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+/*UI Icons - Settings*/
+
+
+/* Make watched icon dark and transparent */
+
+.playedIndicator {background: #00000058;}
+.countIndicator {background: #00000058;}
+
+
+/*Minimalistic play buttons*/
+
+.cardOverlayFab-primary {background-color: #00000000; transistion: 8sec;}
+.cardOverlayButtonIcon {background-color: #00000000 !important;}
+.cardOverlayContainer {background-color: rgba(0, 0, 0, 0.7);}
+
+
+/*Colour of the Like/Watched Button*/
+
+.playstatebutton-icon-played, .ratingbutton-icon-withrating {color: var(--accent-color);}
+.starIcon {color: white;}
+
+
+/*Colour of the Video Player Progress Class*/
+
+.mdl-slider-background-lower {background-color: var(--accent-color);}
+.mdl-slider::-moz-range-thumb {background: var(--accent-color); border-radius: 5px;}
+
+
+/*Colour of the Continue Watch Progression Bar*/
+
+#itemDetailPage .itemProgressBar,
+#indexPage .itemProgressBar{
+    height: 5px;
+    background: rgba(0, 0, 0, 0.45);
+}
+.itemProgressBarForeground {
+    background-color: var(--accent-color);
+}
+.transcodingProgress > div {
+    background-color: rgba(35,34,35, 0.35);
+}
+
+/*Colour of the Selections*/
+
+.navMenuOption-selected {background: #39699c !important;}
+.emby-checkbox:checked + span + .checkboxOutline {background-color: rgba(20, 20, 20, 0.8) !important;}
+
+
+.layout-mobile .detailLogo {
+  position: absolute;
+  display: none !important;
+  width: 100%;
+  height: auto;
+  z-index: 5;
+}
+
+/* Add/Remove 'My Media title */
+.section0 .sectionTitle {
+    display: none;
+}
+
+/* My Media Aligning*/
+.section0 .itemsContainer {
+    align-items: center;
+    justify-content: center;
+}
+
+.emby-input:focus, .emby-textarea:focus, .emby-select-withcolor { border-color: --accent-color !important; }
+
+/* Adjust Header (Home/Favourites section etc) font size */
+/* Adjust both "size-adjust" and "size" to modify size */
+.headerTabs.sectionTabs {text-size-adjust: 105%;  font-size: 105%;}
+.pageTitle {margin-top: auto; margin-bottom: auto;}
+.emby-tab-button {padding: 1.55em 1.5em;}
+
+
+/*Login background*/
+#loginPage {background: url(https://i.imgur.com/BUwzIIB.jpg) !important; background-size: cover !important;}
+
+
+
+/*Library Page - Align Posters to Center */
+.padded-right-withalphapicker {padding-right:2.5% !important;}
+
+/*Library Page - remove vertical alpha Picker*/
+div.alphaPickerRow-vertical {display: none !important;}
+
+
+#moviesPage portraitCard, .squareCard {
+  width: 12%;
+}
+
+.visualCardBox {
+  box-shadow: .3em .3em .5em 0 rgba(0,0,0, 0.8);
+  border-radius: .145em;
+}
+
+.section2 .cardScalable {
+  box-shadow: .3em .3em .5em 0 rgba(0,0,0, 0.8);
+  border-radius: .145em;
+}
+#itemDetailPage .cardScalable {
+  box-shadow: .3em .3em .5em 0 rgba(0,0,0, 0.8);
+  border-radius: .145em;
+}
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+
+/*Text - Settings, Formatting and Alignment*/
+
+
+
+/* Remove Year from Card Data */
+.cardText-secondary {display: none !important;}
+
+/* But maintain episode data for continue watching */
+div.verticalSection.section1.emby-scroller-container .cardText-secondary, #castContent .cardText-secondary{
+  display: block !important;
+}
+
+
+/* Change Card name to rap instead of cut-off  + Resize Card Data Text*/
+.cardText {
+  font-size: 90%;
+  white-space: normal;
+  overflow: visible !important;
+  text-overflow: ellipsis;
+}
+
+/* Gaps for 'Recently Added [...]*/
+.section2 .cardText {
+  padding-top: 12px;
+}
+
+
+.detailButton-content {
+  -webkit-filter: drop-shadow(0px 3px 3px black);
+  filter: drop-shadow(0px 3px 3px black);
+}
+
+/* Gaps for TV Shows and Movies*/
+.collapseContent, .formDialogFooter:not(.formDialogFooter-clear), .formDialogHeader:not(.formDialogHeader-clear), .paperList, .visualCardBox {
+  background-color: rgba(30 ,30 ,30, 0.8);
+  border-radius: 10px !important;
+}
+
+/* Gaps for  Collections
+div.vertical-wrap.itemsContainer.centered .cardText-first {
+  padding-top: .8em;
+}*/
+
+/* Gaps for  Collections*/
+div.vertical-wrap.itemsContainer.centered .cardText-first {
+  display: none;
+}
+
+
+.flex-grow.padded-left.padded-right.pageContainerTopPadding .cardBox-bottompadded {
+  margin: 0 !important;
+  margin-bottom: .6em !important;
+  margin-right: 1em !important;
+}
+
+.cardBox-bottompadded {
+  margin-bottom: .6em !important;
+}
+
+.flex-grow.padded-left.padded-right.pageContainerTopPadding .cardImageContainer{
+   border-radius: 3px !important;
+   -webkit-filter: drop-shadow(0px 3px 3px black);
+   filter: drop-shadow(0px 3px 3px black);
+}
+
+
+.padded-bottom {
+  padding-bottom: 2em;
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+.itemTags, .itemExternalLinks { display: none; }
+#childrenContent > div:nth-child(2) { display: none; }
+
+
+.itemTags, .itemExternalLinks { display: none; }
+#childrenContent > div:nth-child(2) { display: none; }
+
+
+/*Theming Indicators
+
+.playedIndicator,
+.countIndicator {
+  border-radius: 0;
+  box-shadow: none;
+  padding: 0 0 25px 25px;
+}
+
+.cardIndicators {
+  right: 0;
+  top: 0;
+}
+
+.countIndicator,
+.fullSyncIndicator,
+.playedIndicator {
+  background: linear-gradient(-135deg, rgba(40, 40, 40) 50%, transparent 50%);
+}
+
+button.emby-tab-button.emby-button.emby-tab-button-active:hover {
+  color: var(--accent) !important;
+}
+
+.emby-tab-button.show-focus:focus,
+.emby-tab-button:hover {
+  color: var(--accent) !important;
+}*/
+
+/* Creating the Watchlist section */
+Inline #45
+#favoritesTab .cardScalable {
+width: 80%;
+margin-left: 1.2em;
+}
+
+Inline #39
+.itemsContainer > .card > .cardBox {
+margin-right: 1.2em;
+}
+
+/* Change the Favourite Icon to a 'Watch Later' Icon */
+.material-icons.favorite::before {
+content: "\e924";
+}
+
+
+/* Change the Favourite Icon to a 'Watch Later' Icon */
+/* Outline is e8b5*/
+.navMenuOption .material-icons.favorite::before {
+content: "\e87d";
+}
+
+/*Remove Carosell 
+@media all and (min-width: 50em) {
+   #favoritesTab .emby-scroller {
+    margin-right: 0;
+  }
+  #favoritesTab .emby-scrollbuttons {
+    display: none;
+  }
+  #favoritesTab .itemsContainer {
+    flex-wrap: wrap;
+  }
+}*/
+
+
+/* Inline #52 | http://localhost:8096/web/index.html#!/video */
+
+.btnPreviousChapter.autoSize.paper-icon-button-light {
+  display: none;
+}
+
+.btnNextChapter.autoSize.paper-icon-button-light {
+  display: none;
+}
+
+.endsAtText {
+  display: none;
+}
+
+/*Library (Folders) - Remove Shuffle and play all buttons*/
+.layout-desktop .btnPlay.button-flat {display: none;}
+.layout-mobile .btnPlay.button-flat {display: block;}
+.btnShuffle.button-flat {display:block;}
+
+
+
+/* Creates a netflix-esc login page with posters from your current library */
+/* CURRENTLY COMMENTED OUT */
+/*#loginPage {
+    background-image: url('/Branding/Splashscreen?format=jpg&foregroundLayer=0.15') !important;
+    background-position: center;
+    background-size: cover;
+}*/
+
+/*Changes to the theme videos without effecting the main video player*/
+.videoPlayerContainer:not([style="animation: 240ms ease-in 0s 1 normal none running htmlvideoplayer-zoomin;"]) {
+   filter: grayscale(100%);
+}
+
+/*Changes to the theme videos without effecting the main video player - htmlvideo checker ver*/
+/*.htmlvideoplayer:not([src*="blob"]) {
+   filter: grayscale(100%);
+}*/
+
+
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+/*Decorate the navigation section*/
+
+/*Home*/
+.navMenuOption[href*="home"]:hover {
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0.85), 10%, rgba(0,0,0,0.8)), url("https://play-lh.googleusercontent.com/SxdWPR-oZQt9tqph0pyU62_CbyfdQX9g1R5_Nd_vwdkV0IIDceNsytVgdzyHHJGdAwM");
+  background-position: 48% 39%;
+}
+
+
+/*Watch Later*/
+.navMenuOption[href*="12e41"]:hover {
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0.85), 10%, rgba(0,0,0,0.8)), url("https://play-lh.googleusercontent.com/SxdWPR-oZQt9tqph0pyU62_CbyfdQX9g1R5_Nd_vwdkV0IIDceNsytVgdzyHHJGdAwM");
+  background-position: 48% 50%;
+}
+
+
+/*Favourites*/
+.navMenuOption[href*="bc7ea"]:hover {
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0.85), 10%, rgba(0,0,0,0.8)), url("https://play-lh.googleusercontent.com/SxdWPR-oZQt9tqph0pyU62_CbyfdQX9g1R5_Nd_vwdkV0IIDceNsytVgdzyHHJGdAwM");
+  background-position: 48% 61%;
+}
+
+
+/*Movies*/
+.navMenuOption[href*="movies"]:hover {
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0.9), 10%, rgba(0,0,0,0.82)), url("https://decider.com/wp-content/uploads/2021/04/THE-MITCHELLS-VS-THE-MACHINES-NETFLIX-REVIEW.jpg?quality=75&strip=all");
+  background-position: 50% 25%;
+  background-size: cover;
+}
+
+/*TV Shows*/
+.navMenuOption[href*="767bffe"]:hover {
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0.8), 10%, rgba(0,0,0,0.75)), url("https://www.theartistree.fm/wp-content/uploads/2021/09/Inside-Job-Release-Date.jpg") !important;
+  background-position: 26% 57%;
+  background-size: cover;
+}
+
+/*Anime*/
+.navMenuOption[href*="0c419071"]:hover {
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0.85), 10%, rgba(0,0,0,0.8)), url("https://cdn.vox-cdn.com/thumbor/Jf4iGIcgO910Cxl5Sam1WVdf57M=/0x36:852x515/1600x900/cdn.vox-cdn.com/uploads/chorus_image/image/50015235/titan.0.0.jpg");
+  background-position: 26% 30%;
+  background-size: cover;
+}
+
+/*Collection*/
+.navMenuOption[href*="list"]:hover {
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0.5), 10%, rgba(0,0,0,0.4)), url("https://www.get-licensed.co.uk/get-daily/wp-content/uploads/2019/08/apps.55787.9007199266246365.687a10a8-4c4a-4a47-8ec5-a95f70d8852d.jpg";
+  background-position: 26% 30%;
+  background-size: cover;
+}
+
+
+/*Dahsboard*/
+.navMenuOption[href*="dashboard"]:hover:not([href*="dashboardgeneral"]) {
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0.85), 10%, rgba(0,0,0,0.8)), url("https://play-lh.googleusercontent.com/SxdWPR-oZQt9tqph0pyU62_CbyfdQX9g1R5_Nd_vwdkV0IIDceNsytVgdzyHHJGdAwM");
+  background-position: 48% 28%;
+}
+
+
+/*Metadata*/
+.navMenuOption[href*="metadata"]:hover {
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0.85), 10%, rgba(0,0,0,0.8)), url("https://play-lh.googleusercontent.com/SxdWPR-oZQt9tqph0pyU62_CbyfdQX9g1R5_Nd_vwdkV0IIDceNsytVgdzyHHJGdAwM");
+  background-position: 48% 39%;
+}
+
+/*Settings*/
+.navMenuOption[data-itemid*="settings"]:hover {
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0.85), 10%, rgba(0,0,0,0.8)), url("https://play-lh.googleusercontent.com/SxdWPR-oZQt9tqph0pyU62_CbyfdQX9g1R5_Nd_vwdkV0IIDceNsytVgdzyHHJGdAwM");
+  background-position: 48% 57%;
+}
+
+/*Sign Out*/
+.navMenuOption[data-itemid*="logout"]:hover {
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0.85), 10%, rgba(0,0,0,0.8)), url("https://play-lh.googleusercontent.com/SxdWPR-oZQt9tqph0pyU62_CbyfdQX9g1R5_Nd_vwdkV0IIDceNsytVgdzyHHJGdAwM");
+  background-position: 48% 68%;
+}
+
+.section0 .itemsContainer, .emby-tabs-slider{
+  animation: fadeIn 2s;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+/*Add Colour to header*/
+.headerTop {
+background-color: rgba(0,0,0,0.4);
+}
+
+.navMenuOption:hover:not([href*="home"], [href*="12e41"], [href*="bc7ea"], [href*="movies"], [href*="767bffe"], [href*="0c419071"], [href*="list"], [href*="dashboard"], [href*="metadata"],[data-itemid*="settings"], [data-itemid*="logout"]), .navMenuOption[href*="dashboardgeneral"]:hover, .paper-icon-button-light:hover {
+   background-color: rgba(var(--rgb-accent-colour), 0.2) !important;
+}
+
+
+@media (min-width: 48.125em) {
+.backdropCard {
+width: 33.3333333333%;
+width: 25%;
+}
+}
+
+/*Blur backdrops, feel free to edit the intensity of the filter values*/
+.backdropImage {filter: blur(1px) brightness(15%);}
+.backgroundContainer.withBackdrop {background-color: rgba(0,0,0,0);}
+
+/*Top Menu - Hide some top menu Icons*/
+.emby-tabs-slider {display: none; !im}
+
+
+/* Inline #49 | http://100.117.92.45:8096/web/index.html#!/movies.html?topParentId=f137a2dd21bbc1b99aa5c0f6bf02a805 */
+
+#homeTab {
+  padding-top: 40px;
+}
+
+/* Inline #48 | http://100.117.92.45:8096/web/index.html#!/home.html */
+
+.section0 .itemsContainer, .emby-tabs-slider {
+  padding-left: 8%;
+}
+
+
+
+/* Inline #47 | http://100.117.92.45:8096/web/index.html#!/home.html */
+
+#indexPage {
+}
+
+/* Inline #46 | http://100.117.92.45:8096/web/index.html#!/home.html */
+
+#homeTab {
+  background-image: linear-gradient(rgba(0,0,0,0.2), 10%, transparent, 60%, black)
+}
+
+.backdropImage {
+  filter: blur(1px) brightness(15%);
+}
+
+
+
+/* Inline #50 | http://100.117.92.45:8096/web/index.html#!/details?id=584a533a5cf539918691e51d4ccdddfa&serverId=9719b14839144ae188d4f1923c1043a9 */
+
+#itemDetailPage {
+  background-image: linear-gradient(rgba(0,0,0,0.2), 10%, transparent, 70%, black);
+}
+
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/*My Media Stylings*/
+
+/*Movies*/
+.homeLibraryButton[href*="movies"] {
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0.92), 10%, rgba(0,0,0,0.75)), url("https://upload.wikimedia.org/wikipedia/en/thumb/0/00/The_Bad_Guys_poster.jpeg/220px-The_Bad_Guys_poster.jpeg");
+  background-position: 22% 14%;
+  border: 1px;
+  border-color: rgba(225,225,225,0.2);
+  border-style: solid;
+  box-shadow: 5px 5px 3px black;
+}
+
+
+/*TV Shows*/
+.homeLibraryButton[href*="767bff"] {
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0.77), 10%, rgba(0,0,0,0.7)), url("https://m.media-amazon.com/images/M/MV5BY2ZkZTI0MzktYjQyOC00MDQ5LWE4MDItMjE5NTQ3NmM4MGQzXkEyXkFqcGdeQXVyNDQxNjcxNQ@@._V1_.jpg");
+  background-position: 54% 18%;
+  background-size: 80%;
+  border: 1px;
+  border-color: rgba(225,225,225,0.2);
+  border-style: solid;
+  box-shadow: 5px 5px 3px black;
+}
+
+
+/*Anime*/
+.homeLibraryButton[href*="0c4190"] {
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0.8), 10%, rgba(0,0,0,0.6)), url("https://www.nme.com/wp-content/uploads/2022/01/odd-taxi-film-trailer.jpg");
+  background-position: 99% 34%;
+  background-size: 160%;
+  border: 1px;
+  border-color: rgba(225,225,225,0.2);
+  border-style: solid;
+  box-shadow: 5px 5px 3px black;
+}
+
+/*Collections*/
+.homeLibraryButton[href*="list"] {
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0.72), 10%, rgba(0,0,0,0.1)), url("https://www.get-licensed.co.uk/get-daily/wp-content/uploads/2019/08/apps.55787.9007199266246365.687a10a8-4c4a-4a47-8ec5-a95f70d8852d.jpg");
+  background-position: 99% 34%;
+  background-size: 90%;
+}
+
+
+/*Remove Icons from the my media section
+.material-icons.homeLibraryIcon {
+  display: none;
+}
+
+
+/*Center My Media Text*/
+.homeLibraryText {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin: auto;
+  font-size: 108%;
+}
